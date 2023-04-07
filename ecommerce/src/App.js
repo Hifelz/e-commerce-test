@@ -1,26 +1,32 @@
 import React from 'react';
 import './App.css';
-import Carousel from './components/Carousel/Carousel';
+import Carousel from './components/Carousel/Carousel.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to our online store</h1>
+        <h1>Welcome to my secret shop </h1>
       </header>
       <div className="hero-banner">
         <img src="https://placeimg.com/640/480/tech" alt="hero-banner" />
         <div className="hero-content">
-          <h2>Check out our latest deals and must-have items</h2>
+          <h2>Check out our latest products and must-have items</h2>
           <button>Shop Now</button>
         </div>
       </div>
       <div className="product-list">
-        <div className="product-item">
-          <img src="https://placeimg.com/640/480/fashion" alt="product-image" />
-          <h3>Men's Hoodie</h3>
-          <p>Keep warm and stylish with our comfortable hoodie made from premium cotton material. Available in various colors and sizes.</p>
+        <div border="0.1, red"  className="product-item">
+          <img src="https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1" alt="product-image" />
+          <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="rtx"/>
+          <h3>RTX 4090 Ti</h3>
+          <p>The RTX 4090 is a top-of-the-line graphics card that is 
+            designed to deliver unparalleled gaming and professional-level performance.
+          </p>
+          <p>This graphics card also boasts an impressive 48GB of GDDR6X memory, providing lightning-fast
+             data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
           <button>Add to Cart</button>
+  
         </div>
         <div className="product-item">
           <img src="https://placeimg.com/640/480/fashion" alt="product-image" />
