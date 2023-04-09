@@ -1,6 +1,28 @@
 import React from 'react';
 import './App.css';
 import Carousel from './components/Carousel/Carousel.js';
+import Gallery from './Gallery/Gallery';
+
+
+const images = [
+  {
+    src: "https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1",
+    alt: "Image 1",
+    description: "Description of image 1",
+  },
+  {
+    src: "https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1",
+    alt: "Image 2",
+    description: "Description of image 2",
+  },
+  {
+    src: "https://placeimg.com/640/480/fashion",
+    alt: "Image 3",
+    description: "Description of image 3",
+  },
+  // add more images here
+];
+
 
 function App() {
   return (
@@ -16,6 +38,7 @@ function App() {
         </div>
       </div>
       <div className="product-list">
+        <Gallery images={images} ></Gallery>
         <div border="0.1, red"  className="product-item">
           <img src="https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1" alt="product-image" />
           <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="rtx"/>
