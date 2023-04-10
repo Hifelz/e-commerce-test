@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Carousel from './components/Carousel/Carousel.js';
-import Gallery from './Gallery/Gallery';
+import Gallery from './components/Gallery/Gallery'
 
 
 const images = [
@@ -39,17 +38,17 @@ function App() {
       </div>
       <div className="product-list">
         <Gallery images={images} ></Gallery>
-        <div border="0.1, red"  className="product-item">
+        <div border="0.1, red" className="product-item">
           <img src="https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1" alt="product-image" />
-          <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="rtx"/>
+          <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="rtx" />
           <h3>RTX 4090 Ti</h3>
-          <p>The RTX 4090 is a top-of-the-line graphics card that is 
+          <p>The RTX 4090 is a top-of-the-line graphics card that is
             designed to deliver unparalleled gaming and professional-level performance.
           </p>
           <p>This graphics card also boasts an impressive 48GB of GDDR6X memory, providing lightning-fast
-             data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
+            data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
           <button>Add to Cart</button>
-  
+
         </div>
         <div className="product-item">
           <img src="https://placeimg.com/640/480/fashion" alt="product-image" />
@@ -82,7 +81,7 @@ function App() {
           <button>Add to Cart</button>
         </div>
       </div>
-      <Carousel></Carousel>
+      
     </div>
 
   );
