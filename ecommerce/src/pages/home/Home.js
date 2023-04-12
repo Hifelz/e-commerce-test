@@ -3,6 +3,7 @@ import './App.css';
 import Gallery from '../../components/Gallery/Gallery';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
+import "./App.css";
 
 
 
@@ -29,15 +30,17 @@ const images = [
 
 function App() {
   const navigate = useNavigate();
+
   const navigateTotest = () => {
     // 👇️ navigate to /contacts
     navigate('/Products');
   };
 
-  const navigateHome = () => {
-    // 👇️ navigate to /
-    navigate('/app.js');
+  const navigateProducts = () => {
+    // 👇️ navigate to /products
+    navigate('/Products');
   };
+
   return (
 
     <div className="App">
@@ -49,6 +52,7 @@ function App() {
 
 
         <button className='Botao-produtos' onClick={navigateTotest}>products</button>
+
       </header>
 
 
