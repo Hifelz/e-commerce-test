@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Products from './pages/products/Products';
 
-import Shop from './pages/shop/product';
+import Shop from './pages/products/product';
 
 
 
