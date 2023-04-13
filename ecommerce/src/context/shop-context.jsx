@@ -1,10 +1,12 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { PRODUCTS } from "../pages/products/Products";
 import React from 'react'
 
+
+
 export const ProductsContext = createContext();
 
-export const ShopContext = createContext(null);
+export const ShopContext = createContext(useEffect);
 
 const getDefaultCart = () => {
   let cart = {};
