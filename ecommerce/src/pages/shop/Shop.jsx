@@ -1,6 +1,6 @@
 import React from "react";
-import PRODUCTS from "./products/Products.js";
-import { Product } from "product";
+import { PRODUCTS } from "../products/Products";
+import { Product } from "./product";
 import "./shop.css";
 
 export const Shop = () => {

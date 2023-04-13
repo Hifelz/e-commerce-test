@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ShopContext } from "";
-import Shop from "/Shop";
+import { ShopContext } from "../../context/shop-context";
+import Shop from "./Shop";
 
 export const Product = (props) => {
   const { id, productName, price, productImage } = props.data;
@@ -10,7 +10,7 @@ export const Product = (props) => {
 
   return (
     <div className="product">
-      <img src={productImage} />
+      <img src={productImage} alt="idk" />
       <div className="description">
         <p>
           <b>{productName}</b>

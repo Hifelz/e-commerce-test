@@ -1,7 +1,8 @@
-import { createContext, useEffect, useState } from "react";
-import { PRODUCTS } from "./products/products.js";
+import { createContext, useState } from "react";
+import { PRODUCTS } from "../pages/products/Products";
 import React from 'react'
-import ReactDOM from 'react-dom'
+
+export const ProductsContext = createContext();
 
 export const ShopContext = createContext(null);
 

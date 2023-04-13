@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
 import Gallery from '../../components/Gallery/Gallery';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import "./App.css";
+import { PRODUCTS } from '../products/Products';
+
+
+
+
 
 
 
@@ -31,9 +36,9 @@ const images = [
 function App() {
   const navigate = useNavigate();
 
-  const navigateTotest = () => {
+  const navigateShop = () => {
     // 👇️ navigate to /contacts
-    navigate('/Products');
+    navigate('./Shop');
   };
 
   const navigateProducts = () => {
@@ -51,18 +56,21 @@ function App() {
         <h1>Welcome to my secret shop</h1>
 
 
-        <button className='Botao-produtos' onClick={navigateTotest}>products</button>
+        <button className='Botao-produtos' onClick={navigateProducts}>products</button>
+        <button className='Botao-shop' onClick={navigateShop}>shop</button>
 
       </header>
 
-
-
-
       <div className="product-list">
+        <div className="products">
+          {PRODUCTS.map((Product) => (
+            <Product data={Product} />
+          ))}
+        </div>
         <Gallery images={images} ></Gallery>
         <div border="0.1, red" className="product-item">
-          <img src="https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1" alt="product-image" />
-          <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="rtx" />
+          <img src="https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1" alt="Gpu ultra fast" />
+          <img src='https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-1.jpg?fit=600%2C600&ssl=1' alt="GPU rtx " />
           <h3>RTX 4090 Ti</h3>
           <p>The RTX 4090 is a top-of-the-line graphics card that is
             designed to deliver unparalleled gaming and professional-level performance.

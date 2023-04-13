@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import Gallery from '../../components/Gallery/Gallery';
 
@@ -6,7 +6,7 @@ import product1 from "../../assets/1.png";
 import product2 from "../../assets/2.png";
 import product3 from "../../assets/3.png";
 import product4 from "../../assets/4.png";
-
+import "./products.css";
 
 
 export const PRODUCTS =
@@ -78,7 +78,7 @@ const Products = () => {
 
                 <p>My favourite costumer</p>
 
-                <a href="#" onClick={navigateToProducts}>
+                <a href="/Products" onClick={navigateToProducts}>
                 </a>
                 <button onClick={navigateHome}>Home</button >
             </header>

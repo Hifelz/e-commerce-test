@@ -8,7 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Products from './pages/products/Products';
-import shop from './pages/shop/Shop.jsx';
+
 import Shop from './pages/shop/product';
 
 
