@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
-import { PRODUCTS } from "../../products";
+import { PRODUCTS } from "../products/Products";
 import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 
@@ -44,3 +44,4 @@ export const Cart = () => {
     </div>
   );
 };
+export default Cart;

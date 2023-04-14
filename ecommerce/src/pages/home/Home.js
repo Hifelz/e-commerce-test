@@ -45,6 +45,9 @@ function App() {
     // 👇️ navigate to /products
     navigate('/Products');
   };
+  const navigateCart = () => {
+    navigate('./cart');
+  }
 
   return (
 
@@ -58,7 +61,7 @@ function App() {
 
         <button className='Botao-produtos' onClick={navigateProducts}>products</button>
         <button className='Botao-shop' onClick={navigateShop}>shop</button>
-
+        <button className='Botao-cart' onClick={navigateCart}>Cart</button>
       </header>
 
 

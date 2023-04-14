@@ -7,6 +7,7 @@ import product2 from "../../assets/2.png";
 import product3 from "../../assets/3.png";
 import product4 from "../../assets/4.png";
 import "./products.css";
+import addtoCart from '../cart/cart'
 
 
 export const PRODUCTS =
@@ -92,7 +93,7 @@ const Products = () => {
                     </p>
                     <p>This graphics card also boasts an impressive 48GB of GDDR6X memory, providing lightning-fast
                         data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
-                    <button>Add to Cart</button>
+                    <button onClick={addtoCart}>Add to Cart</button>
 
                 </div>
 
