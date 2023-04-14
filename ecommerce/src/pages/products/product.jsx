@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
-import cartItems from "../../context/shop-context";
+import cartItem from "../../cart/cartItem";
 
 
 export const Product = (props) => {
-  const { id, productName, price, productImage } = <props className="data"></props>;
+  const { id, productName, price, productImage } = data.props;
   const { addToCart } = useContext(ShopContext);
 
   return (
