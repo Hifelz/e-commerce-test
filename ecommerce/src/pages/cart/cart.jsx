@@ -5,42 +5,39 @@ import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 
 import "./cart.css";
+
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
-
   const navigate = useNavigate();
-
+  const { cartItem } = useContext(ShopContext);
   return (
-    <div className="cart">
-      <div>
-        <h1>Your Cart Items</h1>
-      </div>
-      <div className="cart">
-        {PRODUCTS.map((product) => {
-          if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
-          }
-        })}
-      </div>
+    <div className="cart-container">
+      <div className="cart-item">
+        {cartItem.map((item) => (
+          
+          <CartItem key={item.id} item={item} />
+        ))}
 
-      {totalAmount > 0 ? (
-        <div className="checkout">
-          <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => navigate("/")}> Continue Shopping </button>
-          <button
-            onClick={() => {
-              checkout();
-              navigate("/checkout");
-            }}
-          >
-            {" "}
-            Checkout{" "}
-          </button>
-        </div>
-      ) : (
-        <h1> Your Shopping Cart is Empty</h1>
-      )}
+      </div>
+      <div className="cart-total">
+        <p>Total: ${cartItem.reduce((acc, item) => acc + item.price, 0)}</p>
+      </div>
+      <div className="cart-actions">
+        <button
+          onClick={() => {
+            navigate("/checkout");
+          }}
+        >
+          Checkout
+        </button>
+      </div>
+      <div className="cart-total">
+        <p>Total: ${cartItem.reduce((acc, item) => acc + item.price, 0)}</p>
+
+      </div>
+      <div className="cart-total">
+        <p>Total: ${cartItem.reduce((acc, item) => acc + item.price, 0)}</p>
+
+      </div>
     </div>
   );
 };
