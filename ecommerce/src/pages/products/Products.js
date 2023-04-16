@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import Gallery from '../../components/Gallery/Gallery';
-
+ import { useContext } from 'react';
+ import { ShopContext } from "../../context/shop-context";
 import product1 from "../../assets/1.png";
 import product2 from "../../assets/2.png";
 import product3 from "../../assets/3.png";
@@ -60,6 +61,8 @@ const images = [
     // add more images here
 ];
 
+
+
 const Products = () => {
 
     const navigate = useNavigate();
@@ -93,8 +96,9 @@ const Products = () => {
                     </p>
                     <p>This graphics card also boasts an impressive 48GB of GDDR6X memory, providing lightning-fast
                         data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
-                    <button onClick={addtoCart}>Add to Cart</button>
+                    <button onClick={addtoCart }>Add to Cart</button>
 
+                    
                 </div>
 
 
