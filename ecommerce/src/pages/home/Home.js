@@ -13,6 +13,7 @@ import "./App.css";
 
 
 
+
 const images = [
   {
     src: "https://i0.wp.com/compify.in/wp-content/uploads/2022/12/4090-HOF-5.jpg?fit=600%2C600&ssl=1",
@@ -79,7 +80,16 @@ function App() {
 
       </div>
 
-
+      <div className="rodape" align="left">
+        <div className='teste2' align="left">
+          <h1>
+          Thank you for coming by
+          </h1>
+          <div className="teste" align="right">
+            <h2 >Contact me @Hifelz on github</h2>
+          </div>
+        </div>
+      </div>
     </div>
 
 

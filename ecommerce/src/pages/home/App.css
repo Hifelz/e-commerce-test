@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +13,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-image: url('/npc1.png');
@@ -43,4 +46,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.rodape {
+  height: 1000px;
+  position: center;
+  align-self: center;
+  top: 1900px;
+  left: -10px;
+  background-image: url("./thankyou.png");
+}
+.teste {
+  background-color: blueviolet;
+}
+.teste2{
+  background-color: darkorchid;
 }
