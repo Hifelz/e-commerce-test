@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Gallery from '../../components/Gallery/Gallery';
-import { useNavigate } from 'react-router-dom';
+
 import Navbar from "../../components/navbar/Navbar";
 import "./App.css";
 
@@ -36,20 +36,7 @@ const images = [
 
 function App() {
 
-  const navigate = useNavigate();
-
-  const navigateShop = () => {
-    // 👇️ navigate to /contacts
-    navigate('./Shop');
-  };
-
-  const navigateProducts = () => {
-    // 👇️ navigate to /products
-    navigate('/Products');
-  };
-  const navigateAbout = () => {
-    navigate('./About');
-  }
+ 
 
   return (
 

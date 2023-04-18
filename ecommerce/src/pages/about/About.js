@@ -1,8 +1,6 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 
-import { useNavigate } from 'react-router-dom';
 
 import Navbar from '../../components/navbar/Navbar';
 import "../../style/main.css";

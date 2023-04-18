@@ -1,8 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+
 import React from 'react';
 import Gallery from '../../components/Gallery/Gallery';
-import { useContext } from 'react';
-import { ShopContext } from "../../context/shop-context";
+
 import product1 from "../../assets/1.png";
 import product2 from "../../assets/2.png";
 import product3 from "../../assets/3.png";
@@ -67,18 +66,7 @@ const images = [
 
 const Products = () => {
 
-    const navigate = useNavigate();
-
-    const navigateToProducts = () => {
-        // 👇️ navigate to /contacts
-        navigate('/products');
-    };
-
-    const navigateHome = () => {
-        // 👇️ navigate to /
-        navigate('/');
-    };
-
+  
     return (
 
 

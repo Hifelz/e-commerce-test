@@ -7,20 +7,7 @@ import { FaTimes, FaBars } from "react-icons/fa";
 
 
 function navbar() {
-    const navigate = useNavigate();
-
-  const navigateShop = () => {
-    // 👇️ navigate to /contacts
-    navigate('./Shop');
-  };
-
-  const navigateProducts = () => {
-    // 👇️ navigate to /products
-    navigate('/Products');
-  };
-  const navigateAbout = () => {
-    navigate('./About');
-  }
+    
     const NavRef = useRef();
 
     const ShowNavBar = () => {
