@@ -47,8 +47,8 @@ function App() {
     // 👇️ navigate to /products
     navigate('/Products');
   };
-  const navigateCart = () => {
-    navigate('./cart');
+  const navigateAbout = () => {
+    navigate('./About');
   }
 
   return (
@@ -57,6 +57,7 @@ function App() {
     <><React.Fragment>
       <Navbar />
     </React.Fragment>
+    
       <div className="App">
         <header className="App-header">
 
