@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --mainColor: #293355;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #DB2893;
+    --textColor: #eee;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #293355;
+    color: var(--textColor);
+}
+
+nav a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: var(--textColor);
+
+}
+
+header .nav-btn {
+    padding: 0 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border: none;
+    color: var(--textColor);
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    header .nav-btn {
+        display: none;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header.nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #293355;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+       transform: none; 
+    }
+}
