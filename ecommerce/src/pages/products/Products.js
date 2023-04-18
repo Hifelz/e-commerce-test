@@ -1,14 +1,16 @@
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import Gallery from '../../components/Gallery/Gallery';
- import { useContext } from 'react';
- import { ShopContext } from "../../context/shop-context";
+import { useContext } from 'react';
+import { ShopContext } from "../../context/shop-context";
 import product1 from "../../assets/1.png";
 import product2 from "../../assets/2.png";
 import product3 from "../../assets/3.png";
 import product4 from "../../assets/4.png";
 import "./products.css";
 import addtoCart from '../cart/cart'
+import Navbar from "../../components/navbar/Navbar";
+
 
 
 export const PRODUCTS =
@@ -66,6 +68,7 @@ const images = [
 const Products = () => {
 
     const navigate = useNavigate();
+
     const navigateToProducts = () => {
         // 👇️ navigate to /contacts
         navigate('/products');
@@ -77,14 +80,18 @@ const Products = () => {
     };
 
     return (
+
+
         <div className="App">
+            <React.Fragment>
+                    <Navbar />
+                </React.Fragment>
             <header className="App-header">
 
                 <p>My favourite costumer</p>
+                
 
-                <a href="/Products" onClick={navigateToProducts}>
-                </a>
-                <button onClick={navigateHome}>Home</button >
+                
             </header>
             <div className="product-list">
                 <Gallery images={images} ></Gallery>
@@ -96,15 +103,19 @@ const Products = () => {
                     </p>
                     <p>This graphics card also boasts an impressive 48GB of GDDR6X memory, providing lightning-fast
                         data transfer speeds and the ability to handle massive datasets and complex simulations. </p>
-                    <button onClick={addtoCart }>Add to Cart</button>
+                    <button onClick={addtoCart}>Add to Cart</button>
 
-                    
+
                 </div>
 
 
             </div>
             <footer className="App-footer"></footer>
         </div>
+                
+                
     );
 };
+
+
 export default Products;
