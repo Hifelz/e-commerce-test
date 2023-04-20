@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: transparent;
+
+  background-image: url('/Banner.png');
 }
 
 
@@ -17,10 +18,11 @@
 
 
 
+
 .App-header {
   background-image: url('/Banner.png');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   min-height: 100vh;
   display: flex;
@@ -57,8 +59,8 @@
   background-image: url("./thankyou.png");
 }
 .teste {
-  background-color: blueviolet;
+  background-color: transparent;
 }
 .teste2{
-  background-color: darkorchid;
+  background-color: transparent;
 }
