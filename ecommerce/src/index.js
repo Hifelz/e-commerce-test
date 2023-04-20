@@ -10,7 +10,7 @@ import {
 import Products from './pages/products/Products';
 
 import Shop from './pages/products/product';
-import Cart from './pages/cart/cart';
+
 import About from './pages/about/About';
 
 
