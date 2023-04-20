@@ -2,7 +2,7 @@ import React from "react";
 
 import "../../style/main.css";
 import {useRef} from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { FaTimes, FaBars } from "react-icons/fa";
 
 
