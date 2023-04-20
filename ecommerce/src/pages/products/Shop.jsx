@@ -1,6 +1,5 @@
 import React from "react";
-import { PRODUCTS } from "../products/Products";
-import { Product } from "../products/product";
+
 import "./shop.css";
 import product1 from "../../assets/1.png";
 import product2 from "../../assets/2.png";
