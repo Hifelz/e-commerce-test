@@ -26,10 +26,10 @@ const Gallery = ({ images }) => {
 
       </div>
       <button className="prev" onClick={handlePrev}>
-        <img width={36} src="setaesquerda.png" alt="seta esquerda"></img>
+        <img width={50} src="setaesquerda.png" alt="seta esquerda"></img>
       </button>
       <button className="next" onClick={handleNext}>
-        <img width={20} src="setadireita.png" alt="seta direita"></img>
+        <img width={36} src="setadireita.png" alt="seta direita"></img>
       </button>
     </div>
 
