@@ -21,7 +21,7 @@
 
 
 .App-header {
-  background-image: url('/Banner.png');
+  background-color: #3a4c6f;
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -57,7 +57,7 @@
   align-self: center;
   top: 1900px;
   left: -10px;
-  background-image: url("./thankyou.png");
+ 
 }
 .teste {
   background-color: transparent;
