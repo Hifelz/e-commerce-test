@@ -3,12 +3,31 @@
   text-align: center;
   font-size: 40px;
 }
+.App-header {
+  background-color: #2a3c61;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: yellow;
+  
+}
+
 .products {
+  background-color: #3a4c6f;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .product {
@@ -20,7 +39,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  
 }
+
 
 .product img {
   width: 400px;
@@ -50,4 +72,20 @@
   background-color: rgb(19, 19, 19);
   color: white;
   cursor: pointer;
+}
+.fork{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 19, 19);
+
+}
+.produto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
