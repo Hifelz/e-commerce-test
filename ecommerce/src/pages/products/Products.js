@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./products.css";
-import Gallery from "../../components/Gallery/Gallery";
+//import Gallery from "../../components/Gallery/Gallery";
 
 import Navbar from "../../components/navbar/Navbar";
 
-const images = [
+//Commented variable to try flexbox with css and react
+/*const images = [
   {
     src: "https://placeimg.com/640/480/tech",
     alt: "Image 1",
@@ -23,7 +24,7 @@ const images = [
   },
   // add more images here
 ];
-
+*/
 const Products = () => {
   return (
     <div className="App">
@@ -31,22 +32,13 @@ const Products = () => {
         <Navbar />
       </React.Fragment>
       <header className="App-header">
-        <p>My favourite costumer</p>
+        <title>Urban Store</title>
+        <div className="container">
+          <div class="item-1">item 1</div>
+          <div class="item-2">Item 2</div>
+          <div class="item-3">Item 3</div>
+        </div>
       </header>
-
-      <div className="products">
-        <Gallery images={images}></Gallery>
-
-        <Gallery images={images}></Gallery>
-
-        <Gallery images={images}></Gallery>
-
-        <Gallery images={images}></Gallery>
-
-        <Gallery images={images}></Gallery>
-
-        <Gallery images={images}></Gallery>
-      </div>
 
       <footer className="App-footer"></footer>
     </div>
