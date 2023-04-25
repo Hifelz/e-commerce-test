@@ -21,9 +21,9 @@
 
 
 .App-header {
-  background-color: #3a4c6f;
+  background-color: #ffffff;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
   display: flex;

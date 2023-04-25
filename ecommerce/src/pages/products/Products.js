@@ -1,4 +1,7 @@
 import React from "react";
+import img1 from "../../img/a.jpg";
+import img2 from "../../img/c.png";
+import img3 from "../../img/e.png";
 
 import "./products.css";
 //import Gallery from "../../components/Gallery/Gallery";
@@ -34,9 +37,21 @@ const Products = () => {
       <header className="App-header">
         <title>Urban Store</title>
         <div className="container">
-          <div class="item-1">item 1</div>
-          <div class="item-2">Item 2</div>
-          <div class="item-3">Item 3</div>
+          <div className="box">
+            <img src={img1} />
+          </div>
+          <div className="box">
+            <img src={img2} />
+          </div>
+          <div className="box">
+            <img src={img3} />
+          </div>
+          <div className="box">
+            <img src={img1} />
+          </div>
+          <div className="box">
+            <img src={img3} />
+          </div>
         </div>
       </header>
 
