@@ -24,6 +24,40 @@ header {
     background-color: #600c37;
     color: var(--textColor);
 }
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.box {
+  width: 250px;
+  margin: 0 10px;
+  box-shadow: 0 0 20px 2px rgba (0, 0, 0, 1);
+  transition:1s;
+}
+.box img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+
+}
+.box:hover{
+  transform:scale(1.3);
+  z-index: 2;
+}
+h3{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+a{
+  text-decoration: none;
+}
 
 nav a {
     margin: 0 2rem;
