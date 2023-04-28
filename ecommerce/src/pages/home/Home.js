@@ -39,8 +39,6 @@ function App() {
         </div>
         <div className="imageBox"></div>
       </section>
-      <br />
-      <p></p>
 
       <div className="container">
         <div className="box">
