@@ -77,6 +77,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: visible;
+  
   
 }
 .box {
@@ -84,9 +86,11 @@ section {
   margin: 0 10px;
   box-shadow: 0 0 20px 2px rgba (0, 0, 0, 1);
   transition:1s;
+  overflow: visible;
+  outline: 1px solid red;
 }
 .box img{
-  display: block;
+  display:contents; 
   width: 100%;
   border-radius: 5px;
 
