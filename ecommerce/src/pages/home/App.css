@@ -15,7 +15,7 @@
 
 
 section {
-  position: absolute;
+  position: absolute !important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -23,9 +23,9 @@ section {
   width: 1200px;
   background-color: #000;
   box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
-  display: flex;
-
+  display: inline-flex
 }
+
 .content {
   width: calc(50% - 50px);
   height: 100%;
@@ -34,6 +34,8 @@ section {
   padding: 30px 50px;
   font-family: sans-serif;
   color: white;
+float: inline-end;
+overflow: hidden;
   
 }
 .imageBox {
@@ -70,18 +72,19 @@ section {
 }
 
 .container {
-  width: 90%;
+  width: 20%;
   padding: 20px;
   height: -2000px;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: visible;
+  
   
   
 }
 .box {
+  
   width: 250px;
   margin: 0 10px;
   box-shadow: 0 0 20px 2px rgba (0, 0, 0, 1);
@@ -90,6 +93,7 @@ section {
   outline: 1px solid red;
 }
 .box img{
+  top:auto;
   display:contents; 
   width: 100%;
   border-radius: 5px;
