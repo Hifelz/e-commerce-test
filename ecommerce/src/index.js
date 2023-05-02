@@ -5,6 +5,7 @@ import App from "./pages/home/Home";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Products from "./pages/products/Products";
+import Store from "./pages/store/Store";
 
 import About from "./pages/about/About";
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/About",
     element: <About />,
+  },
+  {
+    path: "/Store",
+    element: <Store />,
   },
 ]);
 
