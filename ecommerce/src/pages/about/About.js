@@ -21,14 +21,6 @@ const About = () => {
           I love learning new things.
         </p>
       </header>
-      <div className="rodape" align="left">
-        <div className="teste2" align="left">
-          <h1>Thank you for coming by</h1>
-          <div className="teste" align="right">
-            <h2>Contact me @Hifelz on github</h2>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
