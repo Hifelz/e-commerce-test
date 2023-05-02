@@ -9,8 +9,6 @@ import img2 from "../../img/c.png";
 import img3 from "../../img/e.png";
 
 function App() {
-  const [counter, setCounter] = useState(0);
-
   return (
     <>
       <React.Fragment>
