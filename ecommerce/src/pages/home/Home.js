@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 
 import Navbar from "../../components/navbar/Navbar";
@@ -9,6 +9,7 @@ import img2 from "../../img/c.png";
 import img3 from "../../img/e.png";
 
 function App() {
+ 
   return (
     <>
       <React.Fragment>
