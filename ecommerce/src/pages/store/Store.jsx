@@ -1,31 +1,28 @@
 import React, { useState, useEffect, Fragment } from "react";
 import Navbar from "../../components/navbar/Navbar";
+import axios from "axios";
 
 function Store() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchApi = async () => {
-      const url = "https://fakestoreapiserver.reactbd.com/amazonproducts";
-      const response = await fetch(url);
-      const objJson = await response.json();
-      setData(objJson.results);
-    };
-    fetchApi();
-  }, []);
+  const [title, description, price] = useState("");
+  const getStore = () => {
+    axios
+      .get("https://fakestoreapiserver.reactbd.com/products")
+      .then((res) => {
+        console.log(res.data);
+        title(res.data.title);
+        description(res.data.description);
+        price(res.data.price);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
 
   return (
     <div>
       <h1>Store</h1>
-      <div>
-        {data.map((e) => (
-          <div key={e.id}>
-            <h4>{e.title}</h4>
-            <img src={e.thumbnail} alt=""></img>
-            <h4>{e.price}</h4>
-          </div>
-        ))}
-      </div>
+      <button onClick={getStore}> clique para gerar dados</button>
+      <div className="produtos"></div>
     </div>
   );
 }
