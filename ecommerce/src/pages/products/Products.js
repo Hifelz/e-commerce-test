@@ -36,7 +36,8 @@ const Products = () => {
       </React.Fragment>
       <header className="App-header">
         <title>Urban Store</title>
-        <div className="container">
+
+        <div className="container row-span-6">
           <div className="box">
             <img src={img1} />
             <p>lorem ipsum </p>
