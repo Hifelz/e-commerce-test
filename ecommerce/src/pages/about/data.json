@@ -1,0 +1,11 @@
+[{"_id":1,"title":"Long sleeve Jacket","isNew":true,"oldPrice":"200","price":150,"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili ","category":"women","image":"https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600","rating":4, "tech": {
+    "name": "ReactJS"}},
+   {"_id":2,"title":"Jacket with wollen hat","isNew":true,"oldPrice":"70","price":65,"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.","category":"women","image":"https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=600","rating":3, "tech": {
+    "name": "VueJS"}},
+   {"_id":3,"title":"Compact fashion t-shirt","isNew":true,"oldPrice":"70","price":55.99,"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.","category":"women","image":"https://images.pexels.com/photos/2752045/pexels-photo-2752045.jpeg?auto=compress&cs=tinysrgb&w=600","rating":3, "tech": {
+    "name": "Tailwind"}},
+   {"_id":4,"title":"Blue jins","isNew":true,"oldPrice":"70","price":50,"description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.","category":"women","image":"https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=600","rating":3, "tech": {
+    "name": "Remix"}},
+   {"_id":5,"title":"Skirts with full setup","isNew":true,"oldPrice":"800","price":695,"description":"Lorem ipsum dolor sit amet,", "tech": {
+    "name": "JavaScript"
+   }}]
